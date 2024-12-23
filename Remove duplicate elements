@@ -1,13 +1,25 @@
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class RemoveduplicateElements {
 	public static void main(String[] args) {
-		int arr[] = {10,20,10,20,20,30,40,40,30,40,50,60};
-
+		//int arr[] = {10,20,10,20,20,30,40,40,30,40,50,60};
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(20);
+		al.add(10);
+		al.add(30);
+		al.add(40);
+		al.add(20);
+		al.add(40);
+		al.add(30);
+		System.out.println(al);
+		
 		Set<Integer> lhSet=new LinkedHashSet<Integer>();
-		for (int i = 0; i < arr.length; i++) {
-			lhSet.add(arr[i]);
+		
+		for (int i = 0; i < al.size(); i++) {
+			lhSet.add(al.get(i));
 		}
 		System.out.println(lhSet);
 	}
